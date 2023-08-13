@@ -18,7 +18,7 @@ app.get('/',(req,res)=>{
   res.send('Hello and welcome to memories');
 })
 const connect1 = process.env.CONNECT; 
-const PORT = process.env.PORT || 5000; 
+const PORT = process.env.PORT || 3000; 
 
 mongoose.connect(connect1, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(PORT, () => console.log(`Connected to mongo and Server running on port ${PORT}`)))
