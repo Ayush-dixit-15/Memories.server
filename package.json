@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
+    "build": "npm install && npm run compile ",
      "dev": "nodemon index.js"
   },
   "keywords": [],
